@@ -23,7 +23,7 @@ public class CatAndMouse
         String dog = "D";
         int firstIndex = 0;
         String found = "";
-        
+
         //Loop through string to find first variable
         for(int i = 0; i < x.length(); i++){
             String test = x.substring(i,i+1);
@@ -46,6 +46,7 @@ public class CatAndMouse
         //If no variables are found
         if(found.equals("")) return "boring without all three";
 
+        //Start loop again at index that was just found
         for(int i = firstIndex; j > 0; j--){
             i++;
             String test = x.substring(i,i+1);
@@ -76,9 +77,15 @@ public class CatAndMouse
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = "..C.....m.";
-        j = 7;
+        j = 5;
+        System.out.println("Input String: " + in + " \nj: " + j);
+        System.out.println(cm.isCaught(in,j));
+        System.out.println();
+
+        in = "..C.....m.";
+        j = 6;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
@@ -90,13 +97,13 @@ public class CatAndMouse
         System.out.println();
 
         in = ".....C............m......";
-        j = 7;
+        j = 12;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = ".....m............C......";
-        j = 7;
+        j = 13;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
@@ -106,55 +113,55 @@ public class CatAndMouse
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = "..m....D..C";
         j = 13;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = ".D....m....C";
         j = 6;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = ".Dm....C";
         j = 6;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = ".m....CD";
         j = 6;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = ".DC....m";
         j = 6;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = "CDm";
         j = 3;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = "mDC";
         j = 3;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = "DCm......";
         j = 3;
         System.out.println("Input String: " + in + " \nj: " + j);
         System.out.println(cm.isCaught(in,j));
         System.out.println();
-        
+
         in = ".........CmD";
         j = 3;
         System.out.println("Input String: " + in + " \nj: " + j);
