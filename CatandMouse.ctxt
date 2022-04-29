@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=CatandMouse
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ l\ here.\r\n\r\n\ @author\ Joseph\ Capper\r\n\ @version\ 4/28/2022\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment2.params=x\ j
-comment2.target=java.lang.String\ isCaught(java.lang.String,\ int)
+comment0.target=CatAndMouse
+comment0.text=\r\n\ You\ will\ be\ given\ a\ string\ (x)\ featuring\ a\ cat\ 'C',\ a\ dog\ 'D'\ and\ a\ mouse\ 'm'.\ \r\n\ The\ rest\ of\ the\ string\ will\ be\ made\ up\ of\ '.'\ (periods)\r\n\ \r\n\ You\ need\ to\ find\ out\ if\ the\ cat\ can\ catch\ the\ mouse\ from\ it's\ current\ position.\r\n\ The\ cat\ can\ jump\ (j)\ characters.\r\n\ \r\n\ Also,\ the\ cat\ cannot\ jump\ over\ the\ dog.\r\n\r\n\ @author\ Joseph\ Capper\r\n\ @version\ 4/28/2022\r\n
+comment1.params=x\ j
+comment1.target=java.lang.String\ isCaught(java.lang.String,\ int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
 numComments=3
